@@ -44,7 +44,7 @@ public class BloxxyCola {
             }
 
             RobloxChatMessage chatMessage = new RobloxChatMessage();
-            chatMessage.setTopic("cool");
+            chatMessage.setTopic("bloxxerhandler");
             chatMessage.setMessage("<" + playerName + "> " + message);
             Gson gson = new Gson();
             String jsonRequest = gson.toJson(chatMessage);

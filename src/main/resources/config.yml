@@ -1,2 +1,13 @@
-api_key: "YOUR_KEY"
+# BLOXXER
+# ROBLOX - MINECRAFT CONNECTION
+# by Sam Perillo (@imacodr)
+
+#====== IMPORTANT!!!!! =======
+#PLEASE SET AN API KEY FOR YOUR SERVER TO PROTECT FROM DDOS ATTACKS AND UNAUTHORIZED MESSAGES
+api_key: "EXAMPLE-KEY-1411341=" # Please generate a secure key for authorization
+
+# Your Roblox Open Cloud API Key from the console
+roblox_api_key: "YOUR_KEY"
+
+# The universe hosting the server
 universe_id: 1

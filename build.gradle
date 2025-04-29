@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
-    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    compileOnly 'org.json:json:20240303'
 }
 
 tasks {

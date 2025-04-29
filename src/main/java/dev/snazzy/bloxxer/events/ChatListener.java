@@ -19,8 +19,6 @@ public class ChatListener implements Listener {
     @EventHandler
     public void onChat(AsyncChatEvent event) {
         event.renderer((source, sourceDisplayName, message, viewer) -> {
-            System.out.println("testtest");
-
             // Proper way: serialize the Component to plain text
             String plainMessage = PlainTextComponentSerializer.plainText().serialize(message);
 
@@ -32,8 +30,9 @@ public class ChatListener implements Listener {
                 throw new RuntimeException(e);
             }
 
-            return sourceDisplayName
-                    .append(Component.text(": "))
+            return Component.text("<")
+                    .append(sourceDisplayName)
+                    .append(Component.text("> "))
                     .append(message);
         });
     }
