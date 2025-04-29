@@ -22,8 +22,6 @@ public class ChatListener implements Listener {
             // Proper way: serialize the Component to plain text
             String plainMessage = PlainTextComponentSerializer.plainText().serialize(message);
 
-            System.out.println("Plain Message: " + plainMessage);
-
             try {
                 cola.publishChatMessage(source.getName(), plainMessage);
             } catch (IOException | InterruptedException e) {

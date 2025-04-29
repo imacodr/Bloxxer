@@ -1,4 +1,16 @@
 name: bloxxer
+author: Sam Perillo
 version: '1.0-SNAPSHOT'
 main: dev.snazzy.bloxxer.Bloxxer
 api-version: '1.21'
+
+commands:
+    bloxxer:
+        description: Control the Bloxxer configurations
+        usage: /<command> <arg>
+        aliases: [xx]
+        permission: bloxxer.fullControl
+        permission-message: "You do not have permission to use this command"
+        default: true
+
+

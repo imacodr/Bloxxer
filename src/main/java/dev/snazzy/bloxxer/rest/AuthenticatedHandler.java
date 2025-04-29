@@ -45,8 +45,6 @@ public class AuthenticatedHandler implements HttpHandler {
         String user = json.get("user").toString();
         String message = json.get("message").toString();
 
-        System.out.println(message);
-
         Bukkit.getScheduler().runTask(
                 JavaPlugin.getProvidingPlugin(getClass()),
                 () -> Bukkit.broadcast(Component.text("<§c" + user + "§f> " + message))
